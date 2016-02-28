@@ -1,0 +1,1 @@
+web: gunicorn agnimithra2k16.wsgi --log-file -
