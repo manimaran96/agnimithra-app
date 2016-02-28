@@ -1,0 +1,30 @@
+{% extends "bootstrap.html" %}
+
+{% block title %}Agnimithra 2k16|CSE{% endblock %}
+
+{% block navbar %}
+<nav class="navbar navbar-orange navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="logo" href="#home">
+   	    <img src="/static/img/agni.png" width="50px" height="50px" style="margin-top:5px; margin-bottom:5px;"/> Agnimithra
+      </a>      
+    </div>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="nav navbar-nav navbar-right">
+        {% block navbar_right %}
+        {% endblock %}
+      </ul>
+    </div>
+  </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+
+{% endblock %}
