@@ -125,3 +125,16 @@
   right: 0;
   margin: auto;
 }
+
+.marginTop50{
+  margin-top: 50px;
+}
+
+.marginBottom50{
+  margin-bottom: 50px;
+}
+
+.size-300 {
+  width: 300px;
+  height: 300px;
+}
