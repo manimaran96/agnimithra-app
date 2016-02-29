@@ -10,16 +10,17 @@
 {%endblock %}
 
 {% block content %}
-<div class="container-fluid shadow-box" style="background-color:#03A9F4;" id="home">
+<div class="container-fluid shadow-box bg-blue" id="home">
   <center>
     <img class="marginTop70 img-responsive" src="/static/img/agni.png"style="align: center;" height="200px" width="200px"/>
-    <h1 style="color:#FFFFFF;font-size:70px;">Agnimithra 2k16</h1>
-    <h1 style="color:#FFFFFF;">"Technology is best when it brings people together"</h1>
-    <h2 style="color:#FFFFFF;">Department of Computer Science and Engineering</h2>
-    <i class="fa fa-angle-double-down fa-5x" style="color:#ffffff; font-size:90px;margin-top:45px;"></i>
+    <h1 class="text-white" style="font-size:70px;">Agnimithra 2k16</h1>
+    <h1 class="text-white">"Technology is best when it brings people together"</h1>
+    <h2 class="text-white">Department of Computer Science and Engineering</h2>
+    <i class="fa fa-angle-double-down fa-5x text-white" style="font-size:90px;margin-top:65px;"></i>
   </center>
 </div>
-<div class="container marginTop50 marginBottom50" id="workshops">
+<div id="workshops" style="margin-top: -60px; margin-bottom:110px;"></div>
+<div class="container marginTop50 marginBottom50">
   <div class="col-md-4">
     <center><img class="img-responsive size-300" src="/static/img/workshop.png"/></center>
   </div>
@@ -28,6 +29,31 @@
   </div>
   <div class="col-md-4">
     <cenetr><h1 class="text-blue">Workshop #2</h1></center>
+  </div>
+</div>
+<div id="presentation" style="margin-top: -60px; margin-bottom:110px;"></div>
+<div class="container-fluid bg-blue shadow-box" id="presentation">
+  <div class="col-md-8 marginTop50 marginBottom50">
+    <center><h1 class="text-white">Presentation</h1></center>
+  </div>
+  <div class="col-md-4 marginTop50 marginBottom50">
+    <img class="img-responsive size-300" src="/static/img/presentation.png" align="left"/>
+  </div>
+</div>
+<div id="events" style="margin-top: -60px; margin-bottom:110px;"></div>
+<div class="container marginTop50 marginBottom50" id="presentation">
+  <center><h1 class="text-blue" style="margin-top: -20px;">Events</h1></center>
+  <div class="col-md-6">
+    <center>
+      <img class="img-responsive size-300" src="/static/img/technical.png"/>
+      <h2 class="text-blue">Tech Eve</h2>
+    </center>
+  </div>
+  <div class="col-md-6">
+    <center>
+      <img class="img-responsive size-300" src="/static/img/nontechnical.png"/>
+      <h2 class="text-blue">Fun Box</h2>
+    </center>
   </div>
 </div>
 {% endblock %}
