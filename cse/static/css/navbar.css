@@ -139,6 +139,24 @@
   height: 300px;
 }
 
+.size-200 {
+  width: 200px;
+  height: 200px;
+}
+.size-150 {
+  width: 150px;
+  height: 150px;
+}
 .bg-yellow {
   background-color: #ffd200;
+}
+
+.nav-bar {
+  color: #000000;
+  font-size: 20px;
+}
+
+.nav-bar:hover {
+  color: #ffd200;
+  font-size: 20px;
 }
