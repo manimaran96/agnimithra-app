@@ -21,7 +21,7 @@
     {% endblock styles %}
     {% endblock head %}
   </head>
-  <body{% block body_attribs %}{% endblock body_attribs %} style="background-color: #120f0f;">
+  <body{% block body_attribs %}{% endblock body_attribs %} data-spy="scroll" data-target=".navbar" data-offset="50">
     {% block body %}
     {% block navbar %}
     {% endblock navbar %}

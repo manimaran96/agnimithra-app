@@ -147,6 +147,10 @@
   width: 150px;
   height: 150px;
 }
+.size-70 {
+  width: 70px;
+  height: 70px;
+}
 .bg-yellow {
   background-color: #ffd200;
 }
