@@ -164,3 +164,13 @@
   color: #ffd200;
   font-size: 20px;
 }
+
+.link1:hover,
+.link1:active,
+.link1:link,
+.link1:visited {
+  color :#ffd200;
+  font-size: 25px;
+  text-decoration: none;
+}
+
