@@ -2,52 +2,53 @@
 
 {% block title %}Agnimithra 2k16|CSE{% endblock %}
 
-{% block body_attribs %} style="background-color: #120f0f;"{% endblock body_attribs%}
+{% block body_attribs %} style="background-color: #f1f2f6;"{% endblock body_attribs%}
 
 {% block navbar_right %}
-  <li><a href="#workshops">Workshops</a></li>
-  <li><a href="#presentation">Presentation</a></li>
-  <li><a href="#techeve">Tech Eve</a></li>
-  <li><a href="#funbox">Fun Box</a></li>
-  <li><a href="#contactus">Contact Us</a></li>
-  <li><a href="#register">Register</a></li>
+  <li><a href="#workshops">WORKSHOPS</a></li>
+  <li><a href="#presentation">PRESENTATION</a></li>
+  <li><a href="#techeve">TECH EVE</a></li>
+  <li><a href="#funbox">FUN BOX</a></li>
+  <li><a href="#contactus">CONTACT US</a></li>
+  <li><a href="#register">REGISTER</a></li>
 {%endblock %}
 
 {% block content %}
-<div class="container-fluid bg-yellow" id="home">
+<div class="container-fluid" style="background-color: #414141;" id="home">
   <center>
-    <img class="marginTop70 img-responsive" src="/static/img/agni.png"style="align: center;" height="200px" width="200px"/>
-    <h1 class="text-black" style="font-size:70px;">Agnimithra 2k16</h1>
-    <h1 class="text-black">"Technology is best when it brings people together"</h1>
-    <h2 class="text-black">Department of Computer Science and Engineering</h2>
-    <a href="#workshops"><i class="fa fa-angle-double-down fa-5x text-black" style="font-size:90px;margin-top:65px;"></i></a>
+    <img class="marginTop70 img-responsive" src="/static/img/agni.png"style="align: center; padding-top:20px;" height="200px" width="200px"/>
+    <h1 class="text-pink" style="font-size:70px;">Agnimithra 2k16</h1>
+    <h1 class="text-pink">"Technology is best when it brings people together"</h1>
+    <h2 class="text-pink">Department of Computer Science and Engineering</h2>
+    <a href="#workshops"><i class="fa fa-angle-double-down fa-5x text-pink" style="font-size:90px;margin-top:65px;"></i></a>
   </center>
 </div>
-<div id="workshops" style="margin-top: -50px; margin-bottom:70px;"></div>
-<div class="container marginTop50 marginBottom50">
+<div id="workshops" style="margin-top: -50px; margin-bottom:50px;"></div>
+<div class="container bg-white">
   <center>
-    <h1 class="text-yellow" style="font-size: 50px;">Workshops</h1></br></br>
-    <img class="img-responsive size-200" src="/static/img/workshop.svg"/>
+    <h1 class="text-yellow marginTop50" style="font-size: 50px;">Workshops</h1></br>
   </center>
   <div class="col-md-6">
     </br><center>
-      <h1 class="text-yellow">Workshop#1</h1></br>
+    <div class="jumbotron box-shadow">
       <img class="img-responsive size-150" src="/static/img/arduino.svg"/><br/>
-      <p class="text-yellow" style="margin-top: 8px;font-size: 22px;">Arduino is an open-source prototyping platform based on easy-to-use hardware and software.</p>
+      <p style="margin-top: 8px;font-size: 22px;">Arduino is an open-source prototyping platform based on easy-to-use hardware and software.</p>
+    </div>
     </center>
   </div>
   <div class="col-md-6">
     </br><center>
-      <h1 class="text-yellow">Workshop#2</h1></br></br>
-      <img class="img-responsive size-300" src="/static/img/python.svg"/><br/>
-      <p class="text-yellow" style="font-size: 22px;">Python is a widely used high-level, general-purpose, interpreted, dynamic programming language.</p>
+    <div class="jumbotron box-shadow">
+      <img class="img-responsive size-150" src="/static/img/nodejs.svg"/><br/>
+      <p style="font-size: 22px; margin-top: 8px;">As an asynchronous event driven framework, Node.js is designed to build scalable network applications.</p>
+    </div>
     </center>
   </div></br></br>
 </div>
-<div id="presentation" style="margin-top: -50px; margin-bottom:70px;"></div>
-<div class="container-fluid bg-yellow">
+<div id="presentation" style="margin-top: -50px; margin-bottom:50px;"></div>
+<div class="container bg-white">
   <center>
-    <h1 class="text-black marginTop50" style="font-size: 50px;">Presentation</h1></br></br>
+    <h1 class="text-yellow marginTop50" style="font-size: 50px;">Presentation</h1></br>
     <img class="img-responsive size-200" src="/static/img/presentation.svg"/>
   </center>
   <div class="col-md-6">
@@ -67,42 +68,44 @@
     </center>
   </div>
   <i><p class="text-black" style="font-size: 22px;" align="middle">*Innovative ideas on computing are also invited</p></i>
-  <div class="marginBottom50"></div>
 </div>
-<div id="techeve" style="margin-top: -50px; margin-bottom:70px;"></div>
-<div class="container marginTop50">
+<div id="techeve" style="margin-top: -50px; margin-bottom:50px;"></div>
+<div class="container bg-white">
   <center>
-    <h1 class="text-yellow" style="font-size: 50px;">Tech Eve</h1></br></br>
-    <img class="img-responsive size-200" src="/static/img/techeve.svg"/></br></br>
+    <h1 class="text-yellow marginTop50" style="font-size: 50px;">Tech Eve</h1></br></br>
+
   <div>
     <center>
       <div class="col-md-4">
-        <img class="img-responsive size-70" src="/static/img/codecrush.svg"/>
-        <p class="text-yellow" style="font-size: 24px;">Code Crush</p>
+        <img class="img-responsive size-150" src="/static/img/codecrush.svg"/>
+        <p style="font-size: 24px;">Code Crush</p>
       </div>
       <div class="col-md-4">
-        <img class="img-responsive size-70" src="/static/img/whoisgeek.svg"/>
-        <p class="text-yellow" style="font-size: 24px;">Who is Geek?</p>
+        <img class="img-responsive size-150" src="/static/img/whoisgeek.svg"/>
+        <p style="font-size: 24px;">Who is Geek?</p>
       </div>
       <div class="col-md-4">
-        <img class="img-responsive size-70" src="/static/img/quizitto.svg"/>
-        <p class="text-yellow" style="font-size: 24px;">Quizitto</p>
+        <img class="img-responsive size-150" src="/static/img/quizitto.svg"/>
+        <p style="font-size: 24px;">Quizitto</p>
       </div>
       </center>
   </div>
   <div>
     <div class="col-md-3"></div>
-    <div class="col-md-3" align="middle"></br>
-      <img class="img-responsive size-70" src="/static/img/appmania.svg"/>
-      <p class="text-yellow" style="font-size: 24px;" align="middle">Appmania</p>
+    <div class="col-md-3"></br>
+      <center>
+      <img class="img-responsive size-150" src="/static/img/appmania.svg"/>
+      <p style="font-size: 24px;">Appmania</p>
+      </center>
     </div>
-    <div class="col-md-3" align="middle"></br>
-      <img class="img-responsive size-70" src="/static/img/crazyengineer.svg"/>
-      <p class="text-yellow" style="font-size: 24px;">Crazy Engineer</p>
+    <div class="col-md-3"></br>
+      <center>
+      <img class="img-responsive size-150" src="/static/img/crazyengineer.svg"/>
+      <p style="font-size: 24px;">Crazy Engineer</p>
+      </center>
     </div>
     <div class="col-md-3"></div>
   </div>
-  <div class="marginBottom50"></div>
 </div>
 <div id="funbox" style="margin-top: -50px; margin-bottom:50px;"></div>
 <div class="container-fluid marginTop50 bg-yellow">
