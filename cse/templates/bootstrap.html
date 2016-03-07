@@ -35,6 +35,8 @@
     {% endblock navbar %}
     {% block content %}
     {% endblock content %}
+    {% block footer %}
+    {% endblock footer %}
 
     {% block scripts %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -51,6 +53,16 @@
                 return false;
             }
         });
+    });
+    </script>
+    <script>
+    $("#tooltip").ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
+    <script>
+    $('#popover').ready(function(){
+      $('[data-toggle="popover"]').popover();
     });
     </script>
     {% endblock scripts %}
