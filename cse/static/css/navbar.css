@@ -193,3 +193,17 @@
 .box-shadow {
   box-shadow: 0px 5px 5px #414141;
 }
+
+.btn-blue {
+  background-color: #2196f3;
+  color: #ffffff;
+  border-color: #2196f3;
+  }
+
+.btn-blue:hover {
+  background-color: #ffffff;
+  color: #2196f3;
+  border-color: #2196f3;
+  }
+
+
