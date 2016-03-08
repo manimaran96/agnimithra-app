@@ -16,7 +16,7 @@
 {% block content %}
 <div class="container-fluid" style="background-color: #414141;" id="home">
   <center>
-    <img class="marginTop70 img-responsive" src="/static/img/agni.png"style="align: center; padding-top:20px;" height="200px" width="200px"/>
+    <img class="marginTop70 img-responsive" src="/static/img/agni.png" style="align: center; padding-top:20px;" height="200px" width="200px" alt="agnimithra2k16"/>
     <h1 class="text-pink" style="font-size:60px;">Agnimithra 2k16</h1>
     <h2 class="text-pink">Department of Computer Science and Engineering</h2>
     <h2 class="text-pink">March 23 and 24</h2></br>
@@ -34,7 +34,7 @@
   <div class="col-md-6">
     </br><center>
     <div class="jumbotron box-shadow">
-      <img class="img-responsive size-150" src="/static/img/arduino.svg"/><br/>
+      <a href="/cse/megaevents#aurduino"><img class="img-responsive size-150" src="/static/img/arduino.svg" alt="aurduino"/></a><br/>
       <p style="margin-top: 8px;font-size: 22px;">Arduino is an open-source prototyping platform based on easy-to-use hardware and software.</p>
     </div>
     </center>
@@ -42,7 +42,7 @@
   <div class="col-md-6">
     </br><center>
     <div class="jumbotron box-shadow">
-      <img class="img-responsive size-150" src="/static/img/nodejs.svg"/><br/>
+      <a href="/cse/megaevents#nodejs"><img class="img-responsive size-150" src="/static/img/nodejs.svg" alt="nodejs"/></a><br/>
       <p style="font-size: 22px; margin-top: 8px;">As an asynchronous event driven framework, Node.js is designed to build scalable network applications.</p>
     </div>
     </center>
@@ -53,7 +53,7 @@
 <div class="container bg-white">
   <center>
     <h1 class="text-yellow marginTop50" style="font-size: 50px;">Presentation</h1></br>
-    <img class="img-responsive size-200" src="/static/img/presentation.svg"/></br>
+    <a href="/cse/megaevents#presentation"><img class="img-responsive size-200" src="/static/img/presentation.svg" alt="presentation"/></a></br>
   </center>
   <div class="col-md-6">
     <center>
@@ -80,19 +80,18 @@
 <div class="container bg-white">
   <center>
     <h1 class="text-yellow marginTop50" style="font-size: 50px;">Tech Eve</h1></br></br>
-
   <div>
     <center>
       <div class="col-md-4">
-        <img class="img-responsive size-150" src="/static/img/codecrush.svg"/>
+        <a href="/cse/techeve#codecrush"><img class="img-responsive size-150" src="/static/img/codecrush.svg" alt="code crush"/></a>
         <p style="font-size: 24px;">Code Crush</p></br>
       </div>
       <div class="col-md-4">
-        <img class="img-responsive size-150" src="/static/img/whoisgeek.svg"/>
+        <a href="/cse/techeve#whoisgeek"><img class="img-responsive size-150" src="/static/img/whoisgeek.svg" alt="who is geek?"/></a>
         <p style="font-size: 24px;">Who is Geek?</p></br>
       </div>
       <div class="col-md-4">
-        <img class="img-responsive size-150" src="/static/img/quizitto.svg"/>
+        <a href="/cse/techeve#quizitto"><img class="img-responsive size-150" src="/static/img/quizitto.svg" alt="quizitto"/></a>
         <p style="font-size: 24px;">Quizitto</p></br>
       </div>
       </center>
@@ -101,13 +100,13 @@
     <div class="col-md-3"></div>
     <div class="col-md-3"></br>
       <center>
-      <img class="img-responsive size-150" src="/static/img/appmania.svg"/>
+      <a href="/cse/techeve#appmania"><img class="img-responsive size-150" src="/static/img/appmania.svg" alt="appmania"/></a>
       <p style="font-size: 24px;">Appmania</p>
       </center>
     </div>
     <div class="col-md-3"></br>
       <center>
-      <img class="img-responsive size-150" src="/static/img/crazyengineer.svg"/>
+      <a href="/cse/techeve#crazyengineer"><img class="img-responsive size-150" src="/static/img/crazyengineer.svg" alt="crazy engineer"/></a>
       <p style="font-size: 24px;">Crazy Engineer</p>
       </center>
     </div>
@@ -122,13 +121,13 @@
   <div class="col-md-3"></div>
   <div class="col-md-3">
     <div class="jumbotron box-shadow">
-      <img class="img-responsive size-150" src="/static/img/twiddlethumbs.svg"/></br>
+      <a href="/cse/funbox#twiddlethumbs"><img class="img-responsive size-150" src="/static/img/twiddlethumbs.svg" alt="twiddle thumbs"/></a></br>
       <p class="text-black" style="font-size: 22px; margin-left: -19px;">TwiddleThumbs</p>
     </div>
   </div>
   <div class="col-md-3">
     <div class="jumbotron box-shadow">
-      <img class="img-responsive size-150" src="/static/img/joyboom.svg"/></br>
+      <a href="/cse/funbox#joyboom"><img class="img-responsive size-150" src="/static/img/joyboom.svg" alt="joy boom"/></a></br>
       <p class="text-black" style="font-size: 22px;">Joy Boom</p>
     </div>
   </div>
@@ -143,15 +142,15 @@
     <h1 class="text-yellow marginTop50" style="font-size: 50px;">Register</h1></br>
     <div class="col-md-4"></div>
     <div class="col-md-4">
-      <form role="form">
+      <form method="POST" action="/cse/register">
         <div class="form-group">
-          <input type="text" class="form-control" id="name" placeholder="Name" required>
+          <input type="text" class="form-control" name="name" placeholder="Name" required>
         </div>
         <div class="form-group">
-          <input type="email" class="form-control" id="email" placeholder="E-mail" required>
+          <input type="email" class="form-control" name="email" placeholder="E-mail" required>
         </div>
         <div class="form-group">
-          <input type="text" class="form-control" id="email" placeholder="College" required>
+          <input type="text" class="form-control" name="email" placeholder="College" required>
         </div>
         <button type="submit" class="btn btn-blue">Register</button>
       </form>
@@ -171,7 +170,7 @@
     <div class="col-md-4">
       <form role="form">
         <div class="form-group">
-          <input type="email" class="form-control" id="email" placeholder="E-mail" required>
+          <input type="email" class="form-control" name="email" placeholder="E-mail" required>
         </div>
         <button type="submit" class="btn btn-blue">Download Admit Card</button>
       </form>
@@ -187,22 +186,22 @@
   <h1 class="text-yellow marginTop50" style="font-size: 50px;">Contact Us</h1></br>
   <div class="col-md-3" href="#tooltip" data-toggle="tooltip" title="Get us through phone or whatsapp-please click here!">
     <a href="#popover" title="Deepak Kumar" data-toggle="popover" data-placement="bottom" data-content="9566308221">
-      <img class="img-responsive size-70" src="/static/img/phone.svg"/>
+      <img class="img-responsive size-70" src="/static/img/phone.svg" alt="phone"/>
     </a></br>
   </div>
   <div class="col-md-3" href="#tooltip" data-toggle="tooltip" title="Get us through email-please click here!">
     <a href="#popover" title="Mail Us" data-toggle="popover" data-placement="bottom" data-content="agnimithra2k16cse@gmail.com">
-      <img class="img-responsive size-70" src="/static/img/googleplus.svg"/>
+      <img class="img-responsive size-70" src="/static/img/googleplus.svg" alt="mail"/>
     </a></br>
   </div>
   <div class="col-md-3" href="#tooltip" data-toggle="tooltip" title="Get us through facebook-please click here!">
     <a href="https://www.facebook.com/Agnimithra2k16-CSE-1124113250972228" target="_blank">
-      <img class="img-responsive size-70" src="/static/img/facebook.svg"/>
+      <img class="img-responsive size-70" src="/static/img/facebook.svg" alt="facebook"/>
     </a></br>   
   </div>
   <div class="col-md-3" href="#tooltip" data-toggle="tooltip" title="Get the source of this web app from Gitlab!">
     <a href="https://gitlab.com/agnimithra2k16/agnimithra-app" target="_blank">
-        <img class="img-responsive size-70" src="/static/img/gitlab.svg"/>
+        <img class="img-responsive size-70" src="/static/img/gitlab.svg" alt="gitlab"/>
     </a></br>
   </div>
 </div>

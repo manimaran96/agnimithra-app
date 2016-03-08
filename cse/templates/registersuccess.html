@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Agnimithra 2k16|CSE-Register{% endblock %}
+
+{% block body_attribs %} style="background-color: #f1f2f6;"{% endblock body_attribs%}
+
+{% block navbar_right %}
+  <li><a href="/cse/megaevents">MEGA EVENTS</a></li>
+  <li><a href="/cse/techeve">TECH EVE</a></li>
+  <li><a href="/cse/funbox">FUNBOX</a></li>
+{%endblock %}
+
+{% block content %}
+
+<div class="container bg-white">
+  <center>
+  <div>
+    <h1 class="text-yellow" style="font-size: 60px; margin-top: 80px;">Sucessfully Registered!</h1>
+    <p class="text-black" style="font-size: 20px;">Please download the admit card</p></br>
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <form role="form">
+        <div class="form-group">
+          <input type="email" class="form-control" name="email" placeholder="E-mail" required>
+        </div>
+        {% csrf_token %}
+        <button type="submit" class="btn btn-blue">Download Admit Card</button></br></br></br>
+      </form>
+      </br></br></br></br></br></br></br></br></br></br></br></br>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+  </center>
+</div>
+{% endblock content %}
