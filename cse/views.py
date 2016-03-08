@@ -7,10 +7,10 @@ def index(request):
     return render(request, 'index.html')
 
 def megaevents(request):
-    return render(request, 'mega_events.html')
+    return render(request, 'megaevents.html')
 
 def techeve(request):
-    return render(request, 'tech_eve.html')
+    return render(request, 'techeve.html')
 
 def funbox(request):
-    return render(request, 'fun_box.html')
+    return render(request, 'funbox.html')
