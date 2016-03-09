@@ -5,11 +5,14 @@
 
 {% block content %}
 <div class="container">
+<a onclick="window.print()"><img src="/static/img/printer.png" height="30px" width="30px"/>Click Here to print</a>
 <center>
 <br><img class="img-responsive" src ="/static/img/agni1.png" height="100px" width="100px"/>
 <h1>Agnimithra 2k16</h1>
+<h3>Department of Computer Science</h3>
+<h3>Anna University-Villupuram Campus</h3>
 </center>
-<div class="col-md-2">
+<div class="col-md-3">
 </div>
 <div class="col-md-6">
   <table role="presentation">
@@ -26,11 +29,12 @@
       <td><p allign="middle" style="padding-top:6px;">&nbsp;&nbsp;&nbsp;{{ person.mailid }}</p></td>
     </tr>
   </table>
+<div style="position: absolute; margin-top:-170px; margin-left: 500px;">
+  <p> ID :{{ person.id }}</p>
+  <img class="img-responsive" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data={{ person.id}}" height="120px" width="120px"/>
 </div>
-<div  class="col-md-4">
-  </br>
-  <p> ID : {{ person.id }}</p>
-  <img class="img-responsive" src="/static/img/square.png" height="120px" width="120px"/>&nbsp;Pay and get QR
+</div>
+<div  class="col-md-3">
 </div>
 </div>
 
@@ -41,38 +45,40 @@
   <div class="col-md-2">
   </div>
   <div class="col-md-8">
-    <table role="presentation">
+    <center>
+    <table role="presentation" style="width:100%;">
       <tr>
-        <th><h3>Mega Event</h3></th>
-        <th style="padding-left:150px"><h3>Tech Event</h3></th>
-        <th style="padding-left:150px;text-align:right;"><h3>Fun Box</h3></th>
+        <th width="33%"><center><h3>Mega Event</h3></center></th>
+        <th width="33%"><center><h3>Tech Event</h3></center></th>
+        <th width="33%"><center><h3>Fun Box</h3></center></th>
       </tr>
       <tr>
-        <td><p>Arduino</p></td>
-        <td style="padding-left:150px"><p>Code Crush</p></td>
-        <td style="padding-left:150px;text-align:right;"><p>Joy Boom</p></td>
+        <td align="middle"><p>Arduino</p></td>
+        <td align="middle"><p>Code Crush</p></td>
+        <td align="middle"><p>Joy Boom</p></td>
       </tr>
       <tr>
-        <td><p>Ruby</p></td>
-        <td style="padding-left:150px"><p>Who is Geek</p></td>
-        <td style="padding-left:150px;text-align:right;"><p>Twiddle Thumbs</p></td>
+        <td align="middle"><p>Ruby</p></td>
+        <td align="middle"><p>Who is Geek</p></td>
+        <td align="middle"><p>Twiddle Thumbs</p></td>
       </tr>
       <tr>
-        <td><p>Paper Presentation</p></td>
-        <td style="padding-left:150px"><p>Appmania</p></td>
-        <td style="padding-left:150px;text-align:right;"><p></p></td>
-      </tr>
-      <tr>
-        <td><p></p></td>
-        <td style="padding-left:150px"><p>Crazy Engineers</p></td>
-        <td style="padding-left:150px;text-align:right;"><p></p></td>
+        <td align="middle"><p>Paper Presentation</p></td>
+        <td align="middle"><p>Appmania</p></td>
+        <td align="middle"><p></p></td>
       </tr>
       <tr>
         <td><p></p></td>
-        <td style="padding-left:150px"><p>Quizzito</p></td>
-        <td style="padding-left:150px;text-align:right;"><p></p></td>
+        <td align="middle"><p>Crazy Engineers</p></td>
+        <td><p></p></td>
+      </tr>
+      <tr>
+        <td><p></p></td>
+        <td align="middle"><p>Quizzito</p></td>
+        <td><p></p></td>
       </tr>
   </table>
+  </center>
 </div>
 <div class="col-md-2">
 </div>
@@ -86,7 +92,6 @@
 </div>
 <div class="col-md-2">
 </div>
-<a onclick="window.print()"><img src="/static/img/printer.png" height="30px" width="30px"/></a>
 </div>
 {% endblock %}
 {% block scripts %}
