@@ -1,17 +1,9 @@
-import os
-
 from django.conf import settings
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.db import IntegrityError
-from django.template import Context
-from django.template.loader import get_template
-
-from easy_pdf.rendering import render_to_pdf_response
-from xhtml2pdf import pisa
 
 from .models import Person
-from .utils import link_callback
 
 # Create your views here.
 
