@@ -1,0 +1,96 @@
+{% extends "bootstrap1.html" %}
+
+{% block title %}Agnimithra 2k16|Admit Card{% endblock %}
+
+
+{% block content %}
+<div class="container">
+<center>
+<br><img class="img-responsive" src ="/static/img/agni1.png" height="100px" width="100px"/>
+<h1>Agnimithra 2k16</h1>
+</center>
+<div class="col-md-2">
+</div>
+<div class="col-md-6">
+  <table role="presentation">
+    <tr>
+      <td style="padding-top:10px; padding-bottom: 10px;"><img class="img-responsive" src="/static/img/people.png" height="40px" width="40px" align="left"/></td>
+      <td><p allign="middle" style="padding-top:6px;">&nbsp;&nbsp;&nbsp;{{ person.candidate }}</p></td>
+    </tr>
+    <tr>
+      <td style="padding-top:10px; padding-bottom: 10px;"><img class="img-responsive" src="/static/img/ins.png" height="40px" width="40px" align="left"/></td>
+      <td><p allign="middle" style="padding-top:6px;">&nbsp;&nbsp;&nbsp;{{ person.college }}</p></td>
+    </tr>
+    <tr>
+      <td style="padding-top:10px; padding-bottom: 10px;"><img class="img-responsive" src="/static/img/mail.png" height="40px" width="40px" align="left"/></td>
+      <td><p allign="middle" style="padding-top:6px;">&nbsp;&nbsp;&nbsp;{{ person.mailid }}</p></td>
+    </tr>
+  </table>
+</div>
+<div  class="col-md-4">
+  </br>
+  <p> ID : {{ person.id }}</p>
+  <img class="img-responsive" src="/static/img/square.png" height="120px" width="120px"/>&nbsp;Pay and get QR
+</div>
+</div>
+
+<div class="container">
+  <center>
+    <h1>Events</h1>
+  </center>
+  <div class="col-md-2">
+  </div>
+  <div class="col-md-8">
+    <table role="presentation">
+      <tr>
+        <th><h3>Mega Event</h3></th>
+        <th style="padding-left:150px"><h3>Tech Event</h3></th>
+        <th style="padding-left:150px;text-align:right;"><h3>Fun Box</h3></th>
+      </tr>
+      <tr>
+        <td><p>Arduino</p></td>
+        <td style="padding-left:150px"><p>Code Crush</p></td>
+        <td style="padding-left:150px;text-align:right;"><p>Joy Boom</p></td>
+      </tr>
+      <tr>
+        <td><p>Ruby</p></td>
+        <td style="padding-left:150px"><p>Who is Geek</p></td>
+        <td style="padding-left:150px;text-align:right;"><p>Twiddle Thumbs</p></td>
+      </tr>
+      <tr>
+        <td><p>Paper Presentation</p></td>
+        <td style="padding-left:150px"><p>Appmania</p></td>
+        <td style="padding-left:150px;text-align:right;"><p></p></td>
+      </tr>
+      <tr>
+        <td><p></p></td>
+        <td style="padding-left:150px"><p>Crazy Engineers</p></td>
+        <td style="padding-left:150px;text-align:right;"><p></p></td>
+      </tr>
+      <tr>
+        <td><p></p></td>
+        <td style="padding-left:150px"><p>Quizzito</p></td>
+        <td style="padding-left:150px;text-align:right;"><p></p></td>
+      </tr>
+  </table>
+</div>
+<div class="col-md-2">
+</div>
+</div>
+<div class="container">
+<div class="col-md-2">
+</div>
+<div class="col-md-8">
+</br></br>
+<center><p>Mail: agnimithra2k16cse@gmail.com</br>Contact: Sathish Kumar 7502273418&nbsp;&nbsp;&nbsp;&nbsp;Manimaran 9600789681</p></center>
+</div>
+<div class="col-md-2">
+</div>
+<a onclick="window.print()"><img src="/static/img/printer.png" height="30px" width="30px"/></a>
+</div>
+{% endblock %}
+{% block scripts %}
+<script type="text/javascript">
+
+</script>
+{% endblock scripts %}

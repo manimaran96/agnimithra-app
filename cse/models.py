@@ -5,6 +5,7 @@ from django.db import models
 # Create your models here.
 
 class Person(models.Model):
-    mailid = models.CharField(max_length=30, primary_key=True)
+    id = models.AutoField(primary_key=True, default=000) 
+    mailid = models.CharField(max_length=30, unique=True)
     candidate = models.CharField(max_length=150)
     college = models.CharField(max_length=150)
